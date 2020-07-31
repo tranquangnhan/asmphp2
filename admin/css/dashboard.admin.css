@@ -1,0 +1,649 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #555;
+}
+
+.row {
+    width: 100%;
+    float: left;
+}
+
+.pt-5 {
+    padding-top: 4rem;
+}
+
+.nav-bar {
+    width: 100%;
+    min-height: 70px;
+    background-color: #3c55bc;
+    box-shadow: 0px 0px 10px #ccc;
+    position: fixed;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: #555;
+}
+
+.nav-bar {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar .navbar-right,
+.nav-bar .navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar .navbar-left {
+    width: 20%;
+}
+
+.nav-bar .navbar-right i {
+    margin-right: 20px;
+    width: 8%;
+}
+
+.nav-bar .navbar-search {
+    width: 45%;
+}
+
+.nav-bar .navbar-search input[type="text"] {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #999;
+    padding: 0 10px;
+    background-color: #f5f6fa;
+}
+
+.nav-bar .navbar-search form {
+    position: relative;
+}
+
+.nav-bar .navbar-search .btn-search {
+    position: absolute;
+    right: 10px;
+    top: 27%;
+    outline: none;
+    border: 1px solid #f5f6fa;
+    background: #f5f6fa;
+}
+
+.nav-bar .navbar-search .btn-search i {
+    font-size: 14pt;
+    cursor: pointer;
+}
+
+.nav-bar .navbar-search input[type="text"]:focus {
+    outline: none;
+}
+
+.nav-bar .navbar-left {
+    margin-left: 20px;
+}
+
+.nav-bar .navbar-left p {
+    margin-left: 20px;
+    font-size: 20pt;
+}
+
+.nav-bar .navbar-right p {
+    font-size: 13pt;
+    padding-top: 5px;
+}
+
+.nav-bar .navbar-right img {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    margin-right: 20px;
+}
+
+.boxmain {
+    display: flex;
+}
+
+.main-left {
+    width: 20%;
+    box-shadow: 0px 10px 10px #ccc;
+    min-height: 100vh;
+}
+
+.main-left .boxuser .boxuser-img {
+    padding-top: 1%;
+}
+
+.main-left .boxuser .boxuser-img img {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    margin-left: 1rem;
+}
+
+.main-left .boxuser {
+    display: flex;
+    padding-top: 1rem;
+}
+
+.main-left .boxuser .boxuser-intro {
+    padding-top: 4%;
+    padding-left: 1%;
+}
+
+.main-left .boxuser .boxuser-intro .intro-name {
+    font-size: 16pt;
+    margin-bottom: 2%;
+}
+
+.boxnavleft {
+    margin-top: 2rem;
+}
+
+.boxnavleft ul li {
+    padding: 20px 20px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.boxnavleft ul li i {
+    margin-right: 0.5rem;
+}
+
+.boxnavleft ul li:hover {
+    background-color: #ccc;
+}
+
+.boxnavleft ul li a {
+    font-weight: bold;
+}
+
+.boxnavleft ul li ul li:hover a {
+    color: #3c55bc;
+}
+
+.main-right {
+    width: 90%;
+    min-height: 100vh;
+    background-color: #efefef;
+}
+
+.main-right .title {
+    font-size: 20pt;
+    margin-top: 1rem;
+}
+
+.boxcenter {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.boxtodo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.boxtodo .bg1 {
+    background-color: #3c40c6;
+}
+
+.boxtodo .bg2 {
+    background-color: #ffa801;
+}
+
+.boxtodo .bg3 {
+    background-color: #05c46b;
+}
+
+.boxtodo .bg4 {
+    background-color: #ff3f34;
+}
+
+.boxtodo .todo-item {
+    width: 23%;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.boxtodo .todo-item .todo-item__number {
+    margin: 0.5rem 0;
+}
+
+.boxtodo .todo-item i {
+    font-size: 35px;
+}
+
+
+/* start recent */
+
+.box-recent {
+    display: flex;
+    margin-top: 1.5rem;
+    justify-content: space-between;
+}
+
+.box-recent .projects {
+    width: 65%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #efefef;
+}
+
+.box-recent .average {
+    width: 33%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #efefef;
+    padding: 1rem;
+}
+
+.box-recent .projects .box-recent__title {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.box-recent .projects table {
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.box-recent .projects table .id {
+    width: 10%;
+    font-weight: bold;
+}
+
+.box-recent .projects table .pro {
+    width: 20%;
+    font-weight: bold;
+}
+
+.box-recent .projects table .man {
+    width: 30%;
+    font-weight: bold;
+}
+
+.box-recent .projects table .sta {
+    width: 25%;
+    font-weight: bold;
+}
+
+.box-recent .projects table .due {
+    width: 25%;
+    font-weight: bold;
+}
+
+
+/* start introduce */
+
+.introduceright {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.introduceright h2 {
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.introduceright .skills {
+    position: relative;
+    display: flex;
+    margin: 10px 0;
+    padding: 5px 5px;
+    /* background: linear-gradient(#616161 0%, #333, #222); */
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.5s;
+    width: 100%;
+}
+
+.introduceright .intro__title {
+    text-align: left;
+    width: 100%;
+}
+
+.introduceright .skills::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 10;
+}
+
+.introduceright:hover .skills {
+    opacity: 0.05;
+}
+
+.introduceright:hover .skills:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.introduceright .skills .Name {
+    position: relative;
+    width: 110px;
+    text-align: right;
+    color: #333;
+    margin-top: -2px;
+    text-transform: uppercase;
+}
+
+.introduceright .skills .Value {
+    position: relative;
+    width: 40px;
+    text-align: left;
+    color: #fff;
+    margin-top: -2px;
+    text-transform: uppercase;
+}
+
+.introduceright .skills .percent {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    margin: 0 10px;
+    border-radius: 10px;
+    background: #151515;
+    box-shadow: inset 0 0 10px #000;
+    overflow: hidden;
+}
+
+.introduceright .skills .percent .progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: inset 0 0 2px #000;
+    animation: animate 4s ease-in-out forwards;
+}
+
+@keyframes animate {
+    from {
+        width: 0;
+    }
+}
+
+.introduceright .skills:nth-child(2) .percent .progress {
+    background: linear-gradient(45deg, #1fe6ff, #673AB7);
+}
+
+.introduceright .skills:nth-child(4) .percent .progress {
+    background: linear-gradient(45deg, #3bc0ff, #33ff00);
+}
+
+.introduceright .skills:nth-child(6) .percent .progress {
+    background: linear-gradient(45deg, #ffee54, #ff00ca);
+}
+
+.introduceright .skills:nth-child(8) .percent .progress {
+    background: linear-gradient(45deg, #22ffde, #2196F3);
+}
+
+
+/* end introduce */
+
+.boxshow {
+    box-shadow: 0px 0px 5px #ccc;
+    width: 100%;
+    background-color: white;
+    min-height: 70vh;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 3px;
+}
+
+.boxshow .danhmuc {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.boxshow .danhmuc .danhmuc__icon i {
+    margin-right: 10px;
+}
+
+.limit-search {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.limit-search .select select {
+    width: 70px;
+    height: 30px;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.limit-search .search input {
+    width: 70%;
+    height: 30px;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    padding: 0 5px;
+}
+
+.showtable table {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.showtable img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.showtable table td {
+    text-align: center;
+}
+
+.showtable table .thname {
+    width: 25%;
+}
+
+table tbody th,
+td {
+    margin: 1rem 0;
+    padding: 1rem 0;
+}
+
+.showtable .fa-edit {
+    margin-right: 0.5rem;
+}
+
+.showtable .fa-edit,
+.showtable .fa-trash {
+    font-size: 20px;
+}
+
+
+/* show menu left */
+
+.alert {
+    display: none;
+}
+
+
+/* end show menu left */
+
+
+/*  add products */
+
+.themsp form .form-group label {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.themsp form .form-group {
+    width: 50%;
+    margin-left: 3rem;
+}
+
+.themsp form .form-group input[type="text"],
+.themsp form .form-group input[type="number"] {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 0 10px;
+}
+
+.themsp form .form-group textarea {
+    width: 100%;
+    height: 100px;
+    outline: none;
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 10px 10px;
+}
+
+.divsubmit {
+    display: flex;
+    margin-top: 1rem;
+    margin-left: 3rem;
+}
+
+input[type="submit"] {
+    background-color: #3498db;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100px;
+    height: 35px;
+    display: block;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+input[type="submit"]:hover {
+    color: #999;
+}
+
+.btn-cancel {
+    margin-left: 1rem;
+    background-color: #ccc;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100px;
+    height: 35px;
+    display: block;
+    color: white;
+    text-align: center;
+    line-height: 35px;
+    transition: 0.5s;
+}
+
+.themsp .form-group.anhsua {
+    display: flex;
+    flex-direction: column;
+}
+
+.themsp .form-group.anhsua input[type="file"] {
+    width: 100%;
+}
+
+.themsp .form-group.anhsua img {
+    max-width: 100%;
+    margin: 0.5rem 0;
+}
+
+.themsp .form-group.radio {
+    display: flex;
+}
+
+.themsp .form-group.radio .input-radio {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.themsp .form-group.radio .input-radio label {
+    margin-right: 0.5rem;
+}
+
+.themsp .form-group.radio .input-radio input[type="radio"] {
+    margin-top: 1rem;
+}
+
+
+/* end add products */
+
+
+/* thanh search, limit*/
+
+.limit-search form {
+    display: flex;
+    width: 30%;
+}
+
+.limit-search form input[type="submit"].xem {
+    width: 20%;
+    margin-left: 0.5rem;
+    height: 100%;
+}
+
+.limit-search form input[type="text"] {
+    padding: 0 10px;
+}
+
+.limit-search form input[type="text"]:focus {
+    outline: none;
+}
+
+.limit-search form input[type="submit"].search {
+    width: 20%;
+    margin-left: 0.5rem;
+    height: 100%;
+}
+
+
+/* end  thanh search, limit*/
